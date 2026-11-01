@@ -58,7 +58,22 @@
             background-color: #dbeafe;
             text-align: center;
             color: #1e3a8a;
-}
+        }
+
+        .features {
+           display: flex;
+           justify-content: space-around;
+           gap: 20px;
+           padding: 30px;
+        }
+
+        .feature-card {
+           flex: 1;
+           padding: 25px;
+           background-color: #f0f4f8;
+           text-align: center;
+           border-radius: 10px;
+        }
      
     </style>
 </head>
@@ -80,6 +95,23 @@
     <section class="banner">
        <h1>Welcome to TechClub</h1>
        <p>Learn, Create and Innovate Together!</p>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+         <h2>Learn</h2>
+         <p>Learn new technologies and skills.</p>
+        </div>
+
+        <div class="feature-card">
+          <h2>Create</h2>
+          <p>Build creative projects and ideas.</p>
+        </div>
+
+        <div class="feature-card">
+          <h2>Innovate</h2>
+          <p>Turn your ideas into solutions.</p>
+        </div>
     </section>
 
 </body>
