@@ -56,6 +56,31 @@
 
         /* Task 6.3 - Fixed height and scrollable bio box */
 
+        .top-bar {
+           position: sticky;
+           top: 0;
+           background-color: #1e3a8a;
+           color: white;
+           padding: 15px;
+           text-align: center;
+           z-index: 1000;
+      }
+
+        .add-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            font-size: 30px;
+            z-index: 1001;
+            cursor: pointer;
+        }
+
         .bio {
             height: 100px;
             overflow: auto;
@@ -65,7 +90,12 @@
         }
     </style>
 </head>
+
 <body>
+
+    <div class="top-bar">
+        My Profile Page
+    </div>
 
     <div class="profile-card blue">
         <h1>My Profile</h1>
@@ -90,5 +120,8 @@
                 My goal is to become a successful software developer.
             </div>
         </div>
+
+        <button class="add-btn">+</button>
+        
     </body>
 </html>
