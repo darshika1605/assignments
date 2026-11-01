@@ -24,6 +24,8 @@
             border: 2px solid #2563eb;
             background-color: white;
             text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         .profile-card h1 {
@@ -33,6 +35,23 @@
         .profile-card p {
             color: #333333;
             line-height: 1.6;
+        }
+
+        .profile-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .profile-card.blue {
+            background-color: #dbeafe;
+            border-color: #2563eb;
+        }
+        
+        .profile-card.pink {
+            background-color: #fce7f3;
+            border-color: #db2777;
         }
 
         .bio {
@@ -46,8 +65,9 @@
 </head>
 <body>
 
-    <div class="profile-card">
+    <div class="profile-card blue">
         <h1>My Profile</h1>
+        <img src="https://placehold.co/120x120" alt="Profile Photo">
         <p>Hello! I am a Computer Science student.</p>
 
         <div class="bio">
@@ -57,5 +77,16 @@
         </div>
     </div>
 
-</body>
+        <div class="profile-card pink">
+            <h1>My Profile</h1>
+            <img src="https://placehold.co/120x120" alt="Profile Photo">
+            <p>Hello! I am a Computer Science student.</p>
+            
+            <div class="bio">
+                I am learning HTML, CSS, and Java.
+                I enjoy learning new technologies and improving my coding skills.
+                My goal is to become a successful software developer.
+            </div>
+        </div>
+    </body>
 </html>
