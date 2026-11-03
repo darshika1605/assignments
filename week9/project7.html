@@ -41,13 +41,15 @@
         }
 
         .content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
             padding: 20px;
         }
 
         .card {
             background-color: #f1f5f9;
             padding: 20px;
-            margin-bottom: 15px;
             border-radius: 10px;
             text-align: center;
         }
@@ -90,6 +92,10 @@
             .hero {
                 padding: 60px 30px;
             }
+
+            .content {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
 
         /* Desktop */
@@ -100,6 +106,7 @@
 
             .content {
                 padding: 40px;
+                grid-template-columns: repeat(3, 1fr);
             }
         }
     </style>
