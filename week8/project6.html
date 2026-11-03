@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Dashboard</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .sidebar {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 20px;
+        }
+
+        .main {
+            background-color: white;
+            padding: 20px;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+        }
+
+        .card {
+            background-color: #dbeafe;
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <aside class="sidebar">
+            <h2>Dashboard</h2>
+            <p>Home</p>
+            <p>Profile</p>
+            <p>Settings</p>
+        </aside>
+
+        <main class="main">
+            <h1>Welcome to Dashboard</h1>
+
+            <div class="card-grid">
+                <div class="card">Box 1</div>
+                <div class="card">Box 2</div>
+                <div class="card">Box 3</div>
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>
