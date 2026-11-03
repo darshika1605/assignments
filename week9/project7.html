@@ -1,0 +1,127 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 15px;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            background-color: #dbeafe;
+            text-align: center;
+            padding: 40px 15px;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #f1f5f9;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Tablet */
+        @media (min-width: 768px) {
+            nav {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .hero {
+                padding: 60px 30px;
+            }
+        }
+
+        /* Desktop */
+        @media (min-width: 1024px) {
+            .hero {
+                padding: 80px;
+            }
+
+            .content {
+                padding: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h2>TechClub</h2>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to TechClub</h1>
+        <p>Learn, Create and Innovate Together!</p>
+    </section>
+
+    <main class="content">
+        <div class="card">
+            <h2>Learn</h2>
+            <p>Learn new technologies and skills.</p>
+        </div>
+
+        <div class="card">
+            <h2>Create</h2>
+            <p>Build creative projects and ideas.</p>
+        </div>
+
+        <div class="card">
+            <h2>Innovate</h2>
+            <p>Turn ideas into solutions.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 TechClub</p>
+    </footer>
+
+</body>
+</html>
+```
